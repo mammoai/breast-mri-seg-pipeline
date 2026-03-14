@@ -1,0 +1,54 @@
+
+<View style="display: flex">
+    <Style>
+        .lsf.tool__controls {position: absolute; top: 100px;}
+    </Style>
+    <Style>
+        image-element {position: absolute; top: 0px, left: 0px;}
+    </Style>
+    <View style="flex: 80%">
+        <BrushLabels name="labels" toName="image">
+            <Label value="Nipple" background="deeppink"/>
+            <Label value="Mass" background="red"/> 
+            <Label value="Non-mass" background="orange"/>
+            <Label value="Lgll susp" background="yellow"/>
+            <Label value="Lgll norm" background="green"/>
+            <Label value="Vessel" background="darkviolet"/>
+            <Label value="Breast" background="lavenderblush"/>
+        </BrushLabels>
+        <View>
+            <Image name="image"
+                value="$image_url" 
+                width="900px" 
+                maxWidth="1500px" 
+                zoom="true" 
+                brightnessControl="true" 
+                contrastControl="true"
+                />
+        </View>
+    </View>
+    <View style="flex: 20%; margin-left: 1rem; width: 25vw">
+        <Header value="PatientID" size='6'/>
+        <Text value="$patient_id" name="patient_id"/> 
+        <Header value="StudyID" size='6'/>
+        <Text value="$study_id" name="study_id"/>
+        <Text value="$study_date" name="study_date"/>
+        <Header value="Assessment"/>
+        <View style="display: no-flex; height:35vh; overflow-y: scroll; width:100%; overflow-x: visible;">
+            <Text name="assessment_text" value="$assessment_text"/>  
+        </View>
+        <Header value="Annotation comments"/>
+        <TextArea 
+            name="comments"
+            toName="image" 
+            placeholder="Your comments here" 
+            rows="3"
+            maxSubmissions="1"/>
+        <Header value="Other labels"/>
+        <Choices name="img-errors" toName="image" choice="multiple">
+        <Choice value="Image looks healthy" />
+        <Choice value="Bad image quality" />
+        <Choice value="Sagittal view is upside-down" />
+      </Choices>
+    </View>
+</View>

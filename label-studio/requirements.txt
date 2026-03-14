@@ -1,0 +1,7 @@
+label-studio-sdk>=2.0.0
+pandas
+numpy
+requests
+tqdm
+ipykernel
+pydantic
