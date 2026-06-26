@@ -50,11 +50,14 @@ label-studio/label-studio/data/
     ...
 ```
 
-To use the sample data shipped with the repo:
+**Sample Data**
 
-```bash
-cp -a tests/data/task_1 label-studio/label-studio/data/task_001
-```
+To test the tool, we recommend downloading a case from the publicly available [Duke Breast Cancer MRI dataset](https://doi.org/10.7937/TCIA.e3sv-re93) via The Cancer Imaging Archive. The dataset is available under a [CC BY 3.0 license](https://creativecommons.org/licenses/by/3.0/); if you use it, please cite the original source:
+
+> Saha, A. et al. (2021). *Duke-Breast-Cancer-MRI: Dynamic contrast-enhanced magnetic resonance images of breast cancer patients with tumor locations.* The Cancer Imaging Archive. https://doi.org/10.7937/TCIA.e3sv-re93
+
+Once downloaded, place the pre- and post- contrast DICOM series directories for a single case into `label-studio/label-studio/data/task_001/` following the folder structure above, then proceed to step 4.
+
 
 **4. Start Label Studio.** Run this in a dedicated terminal and leave it running.
 
