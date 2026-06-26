@@ -19,11 +19,11 @@ This repository provides the code accompanying the paper, organized in three mod
 **1. Clone the repo and set up the environment.**
 
 ```bash
-git clone <repo-url> mammotation2025-labelstudio-test
-cd mammotation2025-labelstudio-test
+git clone  breast-mri-annotation
+cd breast-mri-annotation
 
-conda create -n mammotation2025 python=3.12 -y
-conda activate mammotation2025
+conda create -n breast-mri-annotation python=3.12 -y
+conda activate breast-mri-annotation
 
 pip install poetry
 poetry install --extras labelstudio
@@ -64,7 +64,7 @@ Once downloaded, place the pre- and post- contrast DICOM series directories for 
 ```bash
 LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true \
 LOCAL_FILES_DOCUMENT_ROOT="$PWD" \
-label-studio start mammotation-project \
+label-studio start breast-mri-annotation-project \
   --data-dir "$PWD/label-studio-data-8083" \
   --no-browser \
   --username admin@example.com \
