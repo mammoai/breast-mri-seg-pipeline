@@ -1,5 +1,6 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
-# Balancing Complexity and Feasibility: Optimizing Clinical Data for Breast MRI Segmentation
+# From 2D Projections to 3D Labels: A Scalable Annotation Tool and Systematic Evaluation for Breast MRI Segmentation
+<!--- Balancing Complexity and Feasibility: Optimizing Clinical Data for Breast MRI Segmentation --->
 
 ![Pipeline Overview](pipeline_overview.png)
 
